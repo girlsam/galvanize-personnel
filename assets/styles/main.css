@@ -1,1 +1,10 @@
-/* add some styles */
+.save-status {
+  margin: 10px;
+  color: white;
+}
+p {
+  margin: 5px;
+}
+button {
+  margin-top: 5px;
+}
