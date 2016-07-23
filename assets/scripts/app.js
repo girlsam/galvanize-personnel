@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $.ajax({
-    url: 'http://galvanize-student-apis.herokuapp.com/gpersonnel/roles',
+    url: 'https://galvanize-student-apis.herokuapp.com/gpersonnel/roles',
     method: 'GET'
   }).done(function(data){
     for (i = 0; i < data.length; i++) {
@@ -22,7 +22,7 @@ $(document).ready(function(){
     var lName = $('#lastName').val();
     var selectedRole = $('#role').val();
     $.ajax({
-      url: 'http://galvanize-student-apis.herokuapp.com/gpersonnel/users',
+      url: 'https://galvanize-student-apis.herokuapp.com/gpersonnel/users',
       method: 'POST',
       data: {firstName: fName, lastName: lName, role: selectedRole}
     }).done(function(results) {
