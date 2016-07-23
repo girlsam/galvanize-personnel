@@ -10,7 +10,8 @@ $(document).ready(function(){
       $('select').change(function() {
         data.forEach(function(role) {
         if (role.title === $('#role').val()) {
-          $('img').attr('src','.' + role.img);
+          $('img').attr('src', role.img);
+          console.log(role.img);
           }
         });
       });
